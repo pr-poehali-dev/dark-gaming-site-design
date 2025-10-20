@@ -68,56 +68,118 @@ const Index = () => {
           <h2 className="text-5xl font-heading font-black mb-16 text-center">
             Игровые <span className="text-primary">Зоны</span>
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                  <Icon name="Radio" size={32} className="text-primary" />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/697a8bb6-e4cc-452d-8954-c7b5cba66604.jpg" 
+                  alt="Стриминг студия"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="Radio" size={24} className="text-primary" />
                 </div>
-                <h3 className="text-3xl font-heading font-bold mb-4">Стриминг</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                <h3 className="text-2xl font-heading font-bold mb-3">Стриминг</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Профессиональное оборудование для трансляции игр. Камеры, микрофоны и мощные ПК для качественного стрима.
                 </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>4K камеры и студийный свет</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>Профессиональные микрофоны</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>Мощные ПК для стриминга</span>
-                  </li>
-                </ul>
               </CardContent>
             </Card>
 
             <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                  <Icon name="Trophy" size={32} className="text-primary" />
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/d82ebebd-7ebf-4235-bda3-b769eabaf9ee.jpg" 
+                  alt="Турнирная арена"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="Trophy" size={24} className="text-primary" />
                 </div>
-                <h3 className="text-3xl font-heading font-bold mb-4">Турниры</h3>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                <h3 className="text-2xl font-heading font-bold mb-3">Турниры</h3>
+                <p className="text-muted-foreground leading-relaxed">
                   Организация киберспортивных соревнований и чемпионатов. Профессиональная арена с системой судейства.
                 </p>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>Киберспортивная арена</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>Система для судейства</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Icon name="Check" size={20} className="text-primary mt-1 flex-shrink-0" />
-                    <span>Призовой фонд</span>
-                  </li>
-                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/daf99dcf-1e29-4bf0-8ea5-732ab462a510.jpg" 
+                  alt="VIP зона"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="Crown" size={24} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold mb-3">VIP-зоны</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Премиальное оборудование и полная приватность. Роскошная обстановка для комфортной игры в уединении.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/286e6154-467e-4602-8804-13202578827d.jpg" 
+                  alt="Геймерское кафе"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="Coffee" size={24} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold mb-3">Кафе</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Геймерское меню с энергетиками, снеками и полноценными блюдами. Подзарядитесь между игровыми сессиями.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/bb9fda8d-8aa8-486c-b8e0-3b99930df346.jpg" 
+                  alt="Аренда для мероприятий"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="PartyPopper" size={24} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold mb-3">Аренда</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Организация мероприятий и вечеринок. Идеально для дней рождения и корпоративных ивентов.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover-scale group overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/b39259f6-54a5-4af0-a528-da9dec260bb8.jpg" 
+                  alt="Тренировки с про-игроками"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Icon name="GraduationCap" size={24} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-heading font-bold mb-3">Тренировки</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Занятия с профессиональными игроками и коучами. Прокачайте свои навыки до про-уровня.
+                </p>
               </CardContent>
             </Card>
           </div>
