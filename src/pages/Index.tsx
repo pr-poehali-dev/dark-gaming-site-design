@@ -34,33 +34,84 @@ const Index = () => {
       </header>
 
       <main className="pt-20">
-        <section className="container mx-auto px-6 py-24 min-h-[90vh] flex flex-col justify-center animate-fade-in">
-          <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-8xl font-heading font-black mb-6 leading-tight">
-              ИГРОВОЙ
-              <br />
-              <span className="text-primary glow-effect inline-block">КЛУБ</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl">
-              Профессиональное оборудование для стриминга и участия в киберспортивных турнирах
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 glow-effect hover-scale bg-primary hover:bg-primary/90"
-              >
-                <Icon name="Calendar" className="mr-2" size={20} />
-                Забронировать
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-6 hover-scale border-primary text-primary hover:bg-primary/10"
-              >
-                <Icon name="Percent" className="mr-2" size={20} />
-                Акции
-              </Button>
+        <section className="relative min-h-[95vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="https://cdn.poehali.dev/projects/2aba8585-d8d4-493d-84d4-24f5681926f7/files/d0d4f4c0-4f8e-4708-8f5f-a4101c235b20.jpg"
+              alt="CyberZone Gaming Club"
+              className="w-full h-full object-cover opacity-40"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 py-24 relative z-10 animate-fade-in">
+            <div className="max-w-4xl">
+              <div className="inline-block mb-6 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+                <p className="text-primary text-sm font-medium flex items-center gap-2">
+                  <Icon name="Zap" size={16} />
+                  Топовое игровое оборудование 2024
+                </p>
+              </div>
+              
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-heading font-black mb-6 leading-tight">
+                ИГРОВОЙ
+                <br />
+                <span className="text-primary glow-effect inline-block">КЛУБ</span>
+              </h1>
+              
+              <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">
+                Профессиональное оборудование для стриминга и участия в киберспортивных турнирах
+              </p>
+
+              <div className="flex flex-wrap gap-6 mb-12">
+                <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-4 py-3 rounded-lg border border-border">
+                  <Icon name="Users" size={24} className="text-primary" />
+                  <div>
+                    <p className="text-2xl font-heading font-bold">50+</p>
+                    <p className="text-sm text-muted-foreground">Игровых мест</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-4 py-3 rounded-lg border border-border">
+                  <Icon name="Clock" size={24} className="text-primary" />
+                  <div>
+                    <p className="text-2xl font-heading font-bold">24/7</p>
+                    <p className="text-sm text-muted-foreground">Работаем круглосуточно</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 bg-card/50 backdrop-blur-sm px-4 py-3 rounded-lg border border-border">
+                  <Icon name="Wifi" size={24} className="text-primary" />
+                  <div>
+                    <p className="text-2xl font-heading font-bold">1 Гбит/с</p>
+                    <p className="text-sm text-muted-foreground">Скорость интернета</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="flex flex-wrap gap-4">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 glow-effect hover-scale bg-primary hover:bg-primary/90"
+                >
+                  <Icon name="Calendar" className="mr-2" size={20} />
+                  Забронировать
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="text-lg px-8 py-6 hover-scale border-primary text-primary hover:bg-primary/10"
+                >
+                  <Icon name="Percent" className="mr-2" size={20} />
+                  Акции
+                </Button>
+              </div>
             </div>
+          </div>
+
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+            <Icon name="ChevronDown" size={32} className="text-primary" />
           </div>
         </section>
 
